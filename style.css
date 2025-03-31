@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#animatedBox {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation: moveBox 5s linear infinite alternate;
+}
+
+@keyframes moveBox {
+    0% { left: 0; border-radius: 0; }
+    50% { left: 200px; background-color: red; border-radius: 50%; }
+    100% { left: 0; border-radius: 0; }
+}
+
+#dataDisplay {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+button {
+    margin: 10px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
